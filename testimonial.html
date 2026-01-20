@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignage IIT - Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .testimonial-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .quote-card {
+            background-color: var(--bg-card);
+            padding: 3rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 4rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+            position: absolute;
+            top: -1.5rem;
+            left: 2rem;
+            background-color: var(--bg-dark);
+            padding: 0 1rem;
+        }
+
+        .quote-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--text-main);
+        }
+
+        .author-section {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        .author-info h3 {
+            margin-bottom: 0.25rem;
+            color: var(--primary-color);
+        }
+
+        .iit-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MohamedFedi.Dev</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="academic.html">Parcours</a>
+                <a href="skills.html">Compétences</a>
+                <a href="internships.html">Stages</a>
+                <a href="events.html">Événements</a>
+                <a href="subjects.html">Projets</a>
+                <a href="passions.html">Passions</a>
+                <a href="quiz.html">Quizz</a>
+                <a href="testimonial.html">Témoignage</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section fade-in">
+        <h1 style="text-align: center; margin-bottom: 4rem;">Mon Expérience à l'IIT</h1>
+
+        <div class="testimonial-container">
+            <div class="quote-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="quote-text">
+                    "L'Institut International de Technologie (IIT) à Sfax offre un cadre d'apprentissage exceptionnel
+                    pour les futurs professionnels de l'informatique. La diversité des modules, de la programmation C au
+                    développement de jeux avec Unity, m'a permis de forger un profil polyvalent et prêt pour le marché
+                    du travail."
+                </p>
+                <div class="author-section">
+                    <img src="https://via.placeholder.com/60" alt="Mohamed Fedi" style="border-radius: 50%;">
+                    <div class="author-info">
+                        <h3>MOHAMED FEDI BEN HMEDOU</h3>
+                        <p style="color: var(--text-muted); margin: 0;">Étudiant en Licence Génie Logiciel et SI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="iit-features">
+                <div class="feature-item">
+                    <i class="fas fa-chalkboard-teacher feature-icon"></i>
+                    <h3>Excellence Pédagogique</h3>
+                    <p style="color: var(--text-muted);">Des professeurs qualifiés et une pédagogie orientée projet.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-globe-americas feature-icon"></i>
+                    <h3>Ouverture à l'International</h3>
+                    <p style="color: var(--text-muted);">Opportunités de stages et d'échanges à l'étranger.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rocket feature-icon"></i>
+                    <h3>Vie Associative</h3>
+                    <p style="color: var(--text-muted);">Clubs dynamiques et événements réguliers.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohamed Fedi Ben Hmedou. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

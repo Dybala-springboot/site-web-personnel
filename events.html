@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements - Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .event-card {
+            background-color: var(--bg-card);
+            border-radius: 1rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .event-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .event-content {
+            padding: 1.5rem;
+        }
+
+        .event-date {
+            font-size: 0.875rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .event-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MohamedFedi.Dev</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="academic.html">Parcours</a>
+                <a href="skills.html">Compétences</a>
+                <a href="internships.html">Stages</a>
+                <a href="events.html">Événements</a>
+                <a href="subjects.html">Projets</a>
+                <a href="passions.html">Passions</a>
+                <a href="quiz.html">Quizz</a>
+                <a href="testimonial.html">Témoignage</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section fade-in">
+        <h1>Manifestations Scientifiques & Formations</h1>
+        <p class="subtitle" style="color: var(--text-muted); max-width: 600px;">
+            Engagement associatif et certifications techniques.
+        </p>
+
+        <div class="events-grid">
+            <!-- Certification -->
+            <div class="event-card">
+                <img src="https://via.placeholder.com/400x200?text=Scrum+Fundamentals" alt="Scrum Fundamentals"
+                    class="event-image">
+                <div class="event-content">
+                    <span class="event-date">2024</span>
+                    <h3 class="event-title">Certification : Scrum Fundamentals</h3>
+                    <p style="color: var(--text-muted);">
+                        Acquisition des principes fondamentaux de la méthodologie Agile Scrum pour la gestion de
+                        projets.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Club 1 -->
+            <div class="event-card">
+                <img src="https://via.placeholder.com/400x200?text=Microsoft+Tech+Club" alt="IIT Microsoft Tech Club"
+                    class="event-image">
+                <div class="event-content">
+                    <span class="event-date">Membre Actif</span>
+                    <h3 class="event-title">IIT Microsoft Tech Club</h3>
+                    <p style="color: var(--text-muted);">
+                        Participation à des ateliers techniques et événements autour de l'écosystème Microsoft.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Club 2 -->
+            <div class="event-card">
+                <img src="https://via.placeholder.com/400x200?text=Robotics+Club" alt="IIT Robotics Club"
+                    class="event-image">
+                <div class="event-content">
+                    <span class="event-date">Membre Actif</span>
+                    <h3 class="event-title">IIT Robotics Club</h3>
+                    <p style="color: var(--text-muted);">
+                        Expérimentation et projets pratiques dans le domaine de la robotique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohamed Fedi Ben Hmedou. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

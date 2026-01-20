@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .skill-category h3 {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-name {
+            font-weight: 500;
+        }
+
+        .skill-percentage {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: var(--bg-card);
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 5px;
+            width: 0;
+            transition: width 1.5s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MohamedFedi.Dev</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="academic.html">Parcours</a>
+                <a href="skills.html">Compétences</a>
+                <a href="internships.html">Stages</a>
+                <a href="events.html">Événements</a>
+                <a href="subjects.html">Projets</a>
+                <a href="passions.html">Passions</a>
+                <a href="quiz.html">Quizz</a>
+                <a href="testimonial.html">Témoignage</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section fade-in">
+        <h1>Compétences Techniques</h1>
+        <p class="subtitle" style="color: var(--text-muted); max-width: 600px;">
+            Expertise en développement logiciel, systèmes d'information et nouvelles technologies.
+        </p>
+
+        <div class="skills-container">
+            <!-- Languages -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programmation</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Python / Java / C</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML / CSS / JavaScript / PHP</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">ASP.NET</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks & Tools -->
+            <div class="skill-category">
+                <h3><i class="fas fa-layer-group"></i> Spécialisations</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Développement Mobile (Android Studio)</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Développement de Jeux (Unity)</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Intelligence Artificielle (Bases)</span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Databases & Methodologies -->
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> SGBD & Conception</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">SQL / PLSQL</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Administration BDD</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Conception Systèmes d'Info</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohamed Fedi Ben Hmedou. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple animation to fill bars on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const fills = document.querySelectorAll('.progress-fill');
+            fills.forEach(fill => {
+                const width = fill.style.width;
+                fill.style.width = '0';
+                setTimeout(() => {
+                    fill.style.width = width;
+                }, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>

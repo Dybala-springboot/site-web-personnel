@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passions et Qualités - Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .passions-container {
+            margin-top: 3rem;
+        }
+
+        .qualities-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .qualities-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .quality-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--bg-card);
+            border-radius: 1rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .quality-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .passion-item {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .passion-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .passion-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .passion-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MohamedFedi.Dev</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="academic.html">Parcours</a>
+                <a href="skills.html">Compétences</a>
+                <a href="internships.html">Stages</a>
+                <a href="events.html">Événements</a>
+                <a href="subjects.html">Projets</a>
+                <a href="passions.html">Passions</a>
+                <a href="quiz.html">Quizz</a>
+                <a href="testimonial.html">Témoignage</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section fade-in">
+        <h1>Passions et Qualités</h1>
+        <p class="subtitle" style="color: var(--text-muted); max-width: 600px;">
+            Ce qui me motive et les valeurs qui guident mon travail.
+        </p>
+
+        <div class="passions-container">
+            <!-- Qualités -->
+            <div class="qualities-section">
+                <div class="quality-card">
+                    <i class="fas fa-search quality-icon"></i>
+                    <h3>Curiosité</h3>
+                    <p style="color: var(--text-muted);">Une soif permanente d'apprendre et de découvrir de nouvelles
+                        technologies.
+                    </p>
+                </div>
+                <div class="quality-card">
+                    <i class="fas fa-language quality-icon"></i>
+                    <h3>Multilingue</h3>
+                    <p style="color: var(--text-muted);">Maîtrise de l'arabe, du français et de l'anglais pour une
+                        communication globale.</p>
+                </div>
+                <div class="quality-card">
+                    <i class="fas fa-lightbulb quality-icon"></i>
+                    <h3>Innovation</h3>
+                    <p style="color: var(--text-muted);">Recherche constante de solutions créatives aux défis
+                        techniques.</p>
+                </div>
+            </div>
+
+            <!-- Passions Gallery -->
+            <h2 style="margin-bottom: 2rem;">Mes Intérêts</h2>
+            <div class="grid-gallery">
+                <div class="passion-item">
+                    <img src="https://via.placeholder.com/400x300?text=Technologie" alt="Technologie">
+                    <div class="passion-overlay">
+                        <h3>Technologie</h3>
+                        <p>Passionné par les dernières avancées du numérique.</p>
+                    </div>
+                </div>
+
+                <div class="passion-item">
+                    <img src="https://via.placeholder.com/400x300?text=Information" alt="Information">
+                    <div class="passion-overlay">
+                        <h3>Information</h3>
+                        <p>Intérêt pour la gestion et l'analyse des données.</p>
+                    </div>
+                </div>
+
+                <div class="passion-item">
+                    <img src="https://via.placeholder.com/400x300?text=Autoformation" alt="Autoformation">
+                    <div class="passion-overlay">
+                        <h3>Autoformation</h3>
+                        <p>Apprentissage continu via les ressources en ligne.</p>
+                    </div>
+                </div>
+
+                <div class="passion-item">
+                    <img src="https://via.placeholder.com/400x300?text=Entraide" alt="Entraide">
+                    <div class="passion-overlay">
+                        <h3>Entraide</h3>
+                        <p>Partage de connaissances au sein de la communauté.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohamed Fedi Ben Hmedou. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

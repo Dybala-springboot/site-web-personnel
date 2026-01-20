@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matières et Projets - Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .page-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .subject-list {
+            background-color: var(--bg-card);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .subject-item {
+            list-style: none;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .subject-item:last-child {
+            border-bottom: none;
+        }
+
+        .subject-item i {
+            color: var(--primary-color);
+        }
+
+        .project-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        .project-body {
+            padding: 1.5rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            background-color: var(--bg-dark);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MohamedFedi.Dev</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="academic.html">Parcours</a>
+                <a href="skills.html">Compétences</a>
+                <a href="internships.html">Stages</a>
+                <a href="events.html">Événements</a>
+                <a href="subjects.html">Projets</a>
+                <a href="passions.html">Passions</a>
+                <a href="quiz.html">Quizz</a>
+                <a href="testimonial.html">Témoignage</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section fade-in">
+        <h1>Matières et Projets</h1>
+        <p class="subtitle" style="color: var(--text-muted); max-width: 600px;">
+            Aperçu de mon cursus et de mes réalisations académiques.
+        </p>
+
+        <div class="page-grid">
+            <!-- Matières -->
+            <aside>
+                <div class="subject-list">
+                    <h3><i class="fas fa-book"></i> Cursus Principal</h3>
+                    <ul>
+                        <li class="subject-item"><i class="fas fa-code"></i> Programmation C / Java / Python</li>
+                        <li class="subject-item"><i class="fas fa-database"></i> SQL / PLSQL</li>
+                        <li class="subject-item"><i class="fas fa-mobile-alt"></i> Android Studio</li>
+                        <li class="subject-item"><i class="fas fa-gamepad"></i> Unity</li>
+                        <li class="subject-item"><i class="fas fa-server"></i> ASP.NET</li>
+                        <li class="subject-item"><i class="fas fa-tasks"></i> Administration BDD</li>
+                        <li class="subject-item"><i class="fas fa-project-diagram"></i> Conception SI</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Projets -->
+            <section>
+                <h3 style="margin-bottom: 1.5rem;">Domaines de Projets</h3>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Applications Web & Mobiles</h4>
+                        <span style="font-size: 0.875rem; color: var(--text-muted);">Projets Académiques</span>
+                    </div>
+                    <div class="project-body">
+                        <p style="color: var(--text-muted);">
+                            Développement d'interfaces responsives et d'applications mobiles intuitives utilisant les
+                            frameworks modernes et les meilleures pratiques de conception.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Android Studio</span>
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>Data & Systèmes</h4>
+                        <span style="font-size: 0.875rem; color: var(--text-muted);">Projets de Conception</span>
+                    </div>
+                    <div class="project-body">
+                        <p style="color: var(--text-muted);">
+                            Modélisation de bases de données complexes et administration de systèmes d'information pour
+                            optimiser les flux de données.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">PLSQL</span>
+                            <span class="tech-tag">Merise/UML</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohamed Fedi Ben Hmedou. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

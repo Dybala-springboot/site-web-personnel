@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            padding: 3rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            background-color: var(--bg-dark);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            transition: var(--transition);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MohamedFedi.Dev</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="academic.html">Parcours</a>
+                <a href="skills.html">Compétences</a>
+                <a href="internships.html">Stages</a>
+                <a href="events.html">Événements</a>
+                <a href="subjects.html">Projets</a>
+                <a href="passions.html">Passions</a>
+                <a href="quiz.html">Quizz</a>
+                <a href="testimonial.html">Témoignage</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section fade-in">
+        <h1 style="text-align: center;">Me Contacter</h1>
+        <p class="subtitle" style="color: var(--text-muted); text-align: center; margin-bottom: 3rem;">
+            N'hésitez pas à me contacter par téléphone au +216 29 514 284 ou par email.
+        </p>
+
+        <div class="contact-container">
+            <form action="mailto:benhamadou.fedi@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nom complet</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="Votre nom">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required
+                        placeholder="votre@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" class="form-label">Sujet</label>
+                    <input type="text" id="subject" name="subject" class="form-input" required
+                        placeholder="Sujet de votre message">
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-textarea" required
+                        placeholder="Votre message..."></textarea>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohamed Fedi Ben Hmedou. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
